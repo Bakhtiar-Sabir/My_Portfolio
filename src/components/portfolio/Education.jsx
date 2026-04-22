@@ -10,15 +10,15 @@ const education = [
   },
   {
     degree: "Pre-Engineering (HSC)",
-    school: "Government Premier College",
+    school: "Government College for Men Nazimabad",
     period: "2020 – 2022",
     note: "Mathematics, Physics, Chemistry.",
   },
   {
     degree: "Matriculation",
-    school: "Habib Public School",
+    school: "The Smart School Campus 1",
     period: "2018 – 2020",
-    note: "Computer Science group.",
+    note: "Computer Science group. ",
   },
 ];
 

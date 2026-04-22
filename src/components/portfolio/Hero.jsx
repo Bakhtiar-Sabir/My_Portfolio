@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 import profile from "@/assets/bakhtiar.jpeg";
 
 // CV file - make sure this file exists in your public folder or adjust path
-const cvUrl = "/Bakhtiar_Sabir_CV.pdf";
+const cvUrl = "/Bakhtiar-Sabir-CV.pdf";
 
 export function Hero() {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
     link.href = cvUrl;
-    link.download = "Bakhtiar_Sabir_CV.pdf";
+    link.download = "Bakhtiar-Sabir-CV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
