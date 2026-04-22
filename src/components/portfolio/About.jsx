@@ -2,7 +2,7 @@ import { Section } from "./Section";
 import { GraduationCap, Building2, Brain, MapPin, Calendar, Briefcase, CheckCircle2 } from "lucide-react";
 
 const cards = [
-  { icon: GraduationCap, title: "NED University", desc: "BSCS — Class of 2026" },
+  { icon: GraduationCap, title: "NED University", desc: "BSCS — Expected 2026" },
   { icon: Building2, title: "Systems Limited", desc: "ERP Intern (D365 F&O)" },
   { icon: Brain, title: "AI Integration", desc: "Gemini-powered platforms" },
 ];
