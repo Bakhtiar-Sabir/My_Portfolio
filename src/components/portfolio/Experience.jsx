@@ -33,7 +33,14 @@ export function Experience() {
   return (
     <Section id="experience" eyebrow="Experience" title="Work History">
       <div className="relative max-w-4xl mx-auto">
-        <div className="absolute left-4 sm:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary/60 via-primary/20 to-transparent" />
+        {/* Vertical timeline line - connects from first to last dot */}
+        <div 
+          className="absolute left-4 sm:left-1/2 top-8 bottom-8 w-px bg-gradient-to-b from-primary via-primary/40 to-primary/10"
+          style={{
+            background: "linear-gradient(to bottom, #8b5cf6, rgba(139, 92, 246, 0.4), rgba(139, 92, 246, 0.05))"
+          }}
+        />
+        
         <div className="space-y-12">
           {jobs.map((j, i) => (
             <div
@@ -42,7 +49,12 @@ export function Experience() {
                 i % 2 === 0 ? "" : "sm:[&>*:first-child]:order-2"
               }`}
             >
-              <div className="absolute left-4 sm:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full gradient-purple glow-purple ring-4 ring-background" />
+              {/* Timeline dot */}
+              <div className="absolute left-4 sm:left-1/2 -translate-x-1/2 z-10">
+                <div className="w-4 h-4 rounded-full gradient-purple glow-purple ring-4 ring-background" />
+              </div>
+              
+              {/* Date and Title */}
               <div className="pl-12 sm:pl-0 sm:pr-10 sm:text-right">
                 <div className="inline-flex items-center gap-2 text-xs text-muted-foreground">
                   <Briefcase className="w-3.5 h-3.5" />
@@ -52,6 +64,8 @@ export function Experience() {
                 <div className="text-primary text-sm">{j.company}</div>
                 <div className="text-xs text-muted-foreground">{j.location}</div>
               </div>
+              
+              {/* Description */}
               <div className="pl-12 sm:pl-10">
                 <div className="glass-strong rounded-2xl p-5 hover-glow">
                   <ul className="space-y-2 text-sm text-muted-foreground">

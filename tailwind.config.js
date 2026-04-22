@@ -7,8 +7,17 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
-        display: ["Space Grotesk", "Inter", "sans-serif"],
+        sans: ["Inter", "system-ui", "-apple-system", "sans-serif"],
+        display: ["Space Grotesk", "Inter", "system-ui", "sans-serif"],
+        mono: ["ui-monospace", "SFMono-Regular", "monospace"],
+      },
+      fontWeight: {
+        light: "300",
+        normal: "400",
+        medium: "500",
+        semibold: "600",
+        bold: "700",
+        extrabold: "800",
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",

@@ -80,11 +80,30 @@ export function Hero() {
           <div className="relative float-anim">
             <div className="absolute -inset-6 rounded-full gradient-purple blur-3xl opacity-40" />
             <div className="absolute -inset-2 rounded-full gradient-purple opacity-70" />
-            <div className="relative w-72 h-72 sm:w-96 sm:h-96 rounded-full overflow-hidden glow-purple-strong border-4 border-white/10">
+            <div className="relative w-72 h-72 sm:w-96 sm:h-96 rounded-full overflow-hidden glow-purple-strong border-4 border-white/10 bg-gradient-purple">
               <img
                 src={profile}
                 alt="Bakhtiar Sabir, MERN stack developer"
                 className="w-full h-full object-cover"
+                style={{
+                  // Adjust objectPosition to show more of your face
+                  // Try these different values based on your image:
+                  objectPosition: "50% 20%", // Shows more of the top (face area)
+                  // objectPosition: "50% 15%", // Shows even more top
+                  // objectPosition: "50% 25%", // Shows slightly lower
+                  // objectPosition: "center top", // Aligns to top
+                  // objectPosition: "50% 30%", // Shows more of middle
+                }}
+                onError={(e) => {
+                  console.error("Image failed to load");
+                  e.target.style.display = "none";
+                  // Show fallback initials if image fails
+                  const parent = e.target.parentElement;
+                  const fallback = document.createElement("div");
+                  fallback.className = "w-full h-full gradient-purple flex items-center justify-center";
+                  fallback.innerHTML = '<span class="text-6xl font-bold text-white">BS</span>';
+                  parent.appendChild(fallback);
+                }}
               />
             </div>
           </div>

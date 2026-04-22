@@ -39,6 +39,10 @@
     background-color: var(--background);
     color: var(--foreground);
     font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     background-image:
       radial-gradient(ellipse 80% 50% at 50% -20%, oklch(0.3 0.2 295 / 0.3), transparent),
       radial-gradient(ellipse 60% 50% at 80% 50%, oklch(0.25 0.18 270 / 0.2), transparent),
@@ -47,9 +51,39 @@
     min-height: 100vh;
   }
 
-  h1, h2, h3, h4 {
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
     font-family: "Space Grotesk", "Inter", sans-serif;
     letter-spacing: -0.02em;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  /* Specific heading weights */
+  h1 {
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }
+
+  h2 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  /* Paragraph styling */
+  p {
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  /* Link styling */
+  a {
+    transition: all 0.2s ease;
+  }
+
+  /* Button text */
+  button, .button {
+    font-weight: 500;
   }
 }
 
