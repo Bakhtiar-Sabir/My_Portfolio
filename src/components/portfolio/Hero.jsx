@@ -60,7 +60,7 @@ export function Hero() {
           <div className="mt-10 grid grid-cols-3 gap-3 max-w-lg">
             {[
               { n: "2+", l: "Years Coding" },
-              { n: "5+", l: "Projects Built" },
+              { n: "2+", l: "Projects Built" },
               { n: "2", l: "Internships" },
             ].map((s) => (
               <div key={s.l} className="glass rounded-2xl px-4 py-4 text-center">
