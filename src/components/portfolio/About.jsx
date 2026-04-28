@@ -16,22 +16,23 @@ const details = [
 
 export function About() {
   return (
-    <Section id="about" eyebrow="About" title="Who I Am">
+    <Section id="about" eyebrow="About" title="Professional Profile">
       <div className="grid lg:grid-cols-2 gap-10 items-start">
         <div className="glass-strong rounded-3xl p-8 hover-glow">
           <p className="text-muted-foreground leading-relaxed">
-            Fourth-year B.S. Computer Science student at{" "}
+            Final-year Computer Science student at{" "}
             <span className="text-foreground font-medium">NED University</span>{" "}
-            (graduating June 2026) and a full-stack MERN developer with practical
-            experience in ERP systems, enterprise software customization, and
-            scalable web applications. Completed a professional internship at{" "}
-            <span className="text-foreground font-medium">Systems Limited</span>{" "}
-            — one of Pakistan's leading IT firms — working on Microsoft Dynamics
-            365 ERP modules, customizing business logic in X++, and generating
-            SSRS reports. Skilled in building AI-integrated e-commerce platforms,
-            RESTful APIs, and responsive frontend interfaces. A proactive team
-            player with strong leadership and problem-solving abilities, eager to
-            contribute to enterprise IT environments involving SAP/ERP ecosystems.
+            (graduating June 2026) specializing in Full-Stack MERN development
+            and Enterprise Resource Planning (ERP). My professional background
+            includes an internship at{" "}
+            <span className="text-foreground font-medium">Systems Limited</span>,
+            where I gained hands-on experience with Microsoft Dynamics 365,
+            customizing business logic in X++, and developing SSRS reports. I
+            excel at building AI-integrated web applications, designing RESTful
+            APIs, and creating high-performance user interfaces. I am a
+            proactive problem-solver and collaborative team player, driven to
+            build scalable solutions that bridge the gap between modern web
+            technologies and enterprise ecosystems.
           </p>
         </div>
 

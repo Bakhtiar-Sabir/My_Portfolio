@@ -1,6 +1,6 @@
 import { ArrowDown, Download, FolderGit2 } from "lucide-react";
 import { motion } from "framer-motion";
-import profile from "@/assets/bakhtiar.jpeg";
+import profile from "@/assets/bakhtiar.png";
 
 // CV file - make sure this file exists in your public folder or adjust path
 const cvUrl = "/Bakhtiar-Sabir-CV.pdf";
@@ -32,7 +32,7 @@ export function Hero() {
             <span className="block gradient-text">Sabir</span>
           </h1>
           <p className="mt-5 text-lg sm:text-xl text-muted-foreground font-medium">
-            MERN Stack Developer & ERP Specialist
+            MERN Stack Developer & ERP Intern
           </p>
           <p className="mt-4 max-w-xl text-muted-foreground leading-relaxed">
             CS student at NED University, building enterprise-grade web
@@ -84,20 +84,16 @@ export function Hero() {
               <img
                 src={profile}
                 alt="Bakhtiar Sabir, MERN stack developer"
-                className="w-full h-full object-cover"
+                className="w-full h-full"
                 style={{
-                  // Adjust objectPosition to show more of your face
-                  // Try these different values based on your image:
-                  objectPosition: "50% 20%", // Shows more of the top (face area)
-                  // objectPosition: "50% 15%", // Shows even more top
-                  // objectPosition: "50% 25%", // Shows slightly lower
-                  // objectPosition: "center top", // Aligns to top
-                  // objectPosition: "50% 30%", // Shows more of middle
+                  objectFit: "cover",
+                  objectPosition: "50% 20%",
+                  transform: "scale(1.4)",
+                  transformOrigin: "50% 20%",
                 }}
                 onError={(e) => {
                   console.error("Image failed to load");
                   e.target.style.display = "none";
-                  // Show fallback initials if image fails
                   const parent = e.target.parentElement;
                   const fallback = document.createElement("div");
                   fallback.className = "w-full h-full gradient-purple flex items-center justify-center";
