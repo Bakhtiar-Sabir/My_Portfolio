@@ -28,8 +28,17 @@ export function About() {
             <span className="text-foreground font-medium">Systems Limited</span>,
             where I gained hands-on experience with Microsoft Dynamics 365,
             customizing business logic in X++, and developing SSRS reports. I
-            excel at building AI-integrated web applications, designing RESTful
-            APIs, and creating high-performance user interfaces. I am a
+            excel at building AI-integrated web applications like{" "}
+            <a
+              href="https://shopsphere-client-e-commerce-websit.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline font-medium"
+            >
+              ShopSphere
+            </a>
+            , designing RESTful APIs, and creating high-performance user
+            interfaces. I am a
             proactive problem-solver and collaborative team player, driven to
             build scalable solutions that bridge the gap between modern web
             technologies and enterprise ecosystems.
